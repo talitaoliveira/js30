@@ -4,33 +4,33 @@
 ![Image of JS](img/icon-js.png)
 ![Image of CSS](img/icon-css.png)
 
-- [x] [day one](days/one)
-- [ ] [day two](days/two)
-- [ ] day three
-- [ ] day four
-- [ ] day five
-- [ ] day six
-- [ ] day seven
-- [ ] day eight
-- [ ] day nine
-- [ ] day ten
-- [ ] day eleven
-- [ ] day twelve
-- [ ] day thirteen
-- [ ] day fourteen
-- [ ] day fifteen
-- [ ] day sixteen
-- [ ] day seventeen
-- [ ] day eighteen
-- [ ] day nineteen
-- [ ] day twenty
-- [ ] day twenty one
-- [ ] day twenty two
-- [ ] day twenty three
-- [ ] day twenty four
-- [ ] day twenty five
-- [ ] day twenty six
-- [ ] day twenty seven
-- [ ] day twenty eight
-- [ ] day twenty nine
-- [ ] day thirty
+- [x] [day #1](days/one)
+- [ ] [day #2](days/two)
+- [ ] day #3
+- [ ] day #4
+- [ ] day #5
+- [ ] day #6
+- [ ] day #7
+- [ ] day #8
+- [ ] day #9
+- [ ] day #10
+- [ ] day #11
+- [ ] day #12
+- [ ] day #13
+- [ ] day #14
+- [ ] day #15
+- [ ] day #16
+- [ ] day #17
+- [ ] day #18
+- [ ] day #19
+- [ ] day #20
+- [ ] day #21
+- [ ] day #22
+- [ ] day #23
+- [ ] day #24
+- [ ] day #25
+- [ ] day #26
+- [ ] day #27
+- [ ] day #28
+- [ ] day #29
+- [ ] day #30
