@@ -1,5 +1,5 @@
 # JS30
-30 days of pure Javascript and CSS
+Studies: 30 days of pure Javascript and CSS
 
 ![Image of JS](img/icon-js.png)
 ![Image of CSS](img/icon-css.png)
