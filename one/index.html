@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title></title>
-	<style>
-		.keys{
-			display: flex;
-		}
-		.key{
-			transition: all 0.07s;
-		}
-		.playing{
-			transform: scale(2);
-			border: 1px solid yellow;
-		}
-	</style>
+	<meta charset="utf-8">
+	<title>Drum Kit</title>
+	<script type="text/javascript" src="js/script.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=320px, user-scalable=no">
+	<meta name="theme-color" content="#002">
 </head>
 <body>
 
@@ -55,11 +48,15 @@
 			<span class="sound">tom2</span>
 		</div>
 		<div data-key="39" class="key">
-			<kbd>=></kbd>
+			<kbd>→</kbd>
 			<span class="sound">hi1</span>
 		</div>
 	</div>
 
+
+	<small>
+		I really don't know the name of this sounds, so I gave this names...
+	</small>
 	<audio data-key="65" src="sounds/tom.wav"></audio>
 	<audio data-key="83" src="sounds/kit.wav"></audio>
 	<audio data-key="68" src="sounds/clap.wav"></audio>
@@ -71,24 +68,6 @@
 	<audio data-key="76" src="sounds/tom2.wav"></audio>
 	<audio data-key="39" src="sounds/hi1.wav"></audio>
 
-	<script type="text/javascript">
-		function playSound(e){
-			const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-			const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-			if(!audio) return; //stop the function from running all togeter
-			audio.currentTime = 0; // rewind the start
-			audio.play();
-			key.classList.add('playing');
-		}
-
-		function removeTransition(e){
-			if(e.propertyName !== 'transform') return; // skip if it's not a transform
-			this.classList.remove('playing');
-		}
-
-		const keys = document.querySelectorAll('.key');
-		keys.forEach(key => key.addEventListener('transitionend',removeTransition));
-		window.addEventListener('keydown',playSound);
-	</script>
+	
 </body>
 </html>
