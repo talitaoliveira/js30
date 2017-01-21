@@ -1,2 +1,33 @@
-# js30
-30 day Javascript
+# JS30
+30 days of pure Javascript
+
+- [x] one
+- [ ] two
+- [ ] three
+- [ ] four
+- [ ] five
+- [ ] six
+- [ ] seven
+- [ ] eight
+- [ ] nine
+- [ ] ten
+- [ ] eleven
+- [ ] twelve
+- [ ] thirteen
+- [ ] fourteen
+- [ ] fifteen
+- [ ] sixteen
+- [ ] seventeen
+- [ ] eighteen
+- [ ] nineteen
+- [ ] twenty
+- [ ] twenty one
+- [ ] twenty two
+- [ ] twenty three
+- [ ] twenty four
+- [ ] twenty five
+- [ ] twenty six
+- [ ] twenty seven
+- [ ] twenty eight
+- [ ] twenty nine
+- [ ] thirty
