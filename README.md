@@ -1,8 +1,8 @@
 # JS30
-30 days of pure Javascript
+30 days of pure Javascript and CSS
 
 - [x] [one](days/one)
-- [ ] two
+- [ ] [two](days/two)
 - [ ] three
 - [ ] four
 - [ ] five
