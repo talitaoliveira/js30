@@ -5,7 +5,7 @@
 ![Image of CSS](img/icon-css.png)
 
 - [x] [day #1](days/one)
-- [ ] [day #2](days/two)
+- [x] [day #2](days/two)
 - [ ] day #3
 - [ ] day #4
 - [ ] day #5
