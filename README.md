@@ -1,7 +1,7 @@
 # JS30
 30 days of pure Javascript
 
-- [x] one
+- [x] [one](days/one)
 - [ ] two
 - [ ] three
 - [ ] four
