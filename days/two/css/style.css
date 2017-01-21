@@ -1,0 +1,55 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+*{
+	--hora: #D3D0CB;
+	--minuto: #6E8898;
+	--segundo: #9FB1BC;
+	--relogio: #254354;
+	--background: #E2C044;
+}
+
+html{
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Roboto Mono', monospace;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--background);
+}
+.clock{
+	width: 20rem;
+	height: 20rem;
+	border: 20px solid var(--relogio);	
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 2rem;
+}
+.clock-face{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-3px);
+}
+.hand{
+	width: 50%;
+	height: 5px;
+	background: black;
+	position: absolute;
+	top: 50%;
+	transform-origin: right;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 0;
+}
+.second-hand{background: var(--segundo);width: 30%;left: 20%;}
+.min-hand{background: var(--minuto);width:40%;left: 10%;}
+.hour-hand{background: var(--hora);}
