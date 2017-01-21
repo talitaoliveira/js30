@@ -4,8 +4,8 @@
 ![Image of JS](img/icon-js.png)
 ![Image of CSS](img/icon-css.png)
 
-- [x] [day #1](days/one)
-- [x] [day #2](days/two)
+- [x] [day #1](days/one) [view](http://talitaoliveira.com.br/js30/days/two/)
+- [x] [day #2](days/two) [view](http://talitaoliveira.com.br/js30/days/one)
 - [ ] day #3
 - [ ] day #4
 - [ ] day #5
