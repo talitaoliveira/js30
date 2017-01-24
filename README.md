@@ -1,13 +1,15 @@
 # JS30
-Studies: 30 days of pure Javascript and CSS
+Studies: 30 days of pure Javascript and some CSS
+
+https://javascript30.com
 
 ![Image of JS](img/icon-js.png)
 ![Image of CSS](img/icon-css.png)
 
-- [x] [day #1](days/one) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/one/)
-- [x] [day #2](days/two) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/two/)
-- [ ] day #3
-- [ ] day #4
+- [x] [day #1 - JavaScript Drum Kit](days/one) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/one/)
+- [x] [day #2 - CSS + JS Clock](days/two) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/two/)
+- [x] [day #3 - Playing with CSS Variables and JS](days/three)
+- [x] [day #4 - Array Cardio Day](days/four)
 - [ ] day #5
 - [ ] day #6
 - [ ] day #7

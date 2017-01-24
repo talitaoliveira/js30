@@ -3,6 +3,8 @@ window.onload = function(){
 	const minsHand = document.querySelector('.min-hand');
 	const hourHand = document.querySelector('.hour-hand');
 
+	const buttonInvertColors = document.querySelector('button');
+
 	function setDate(){
 		const now = new Date();
 		// seconds
@@ -11,8 +13,7 @@ window.onload = function(){
 		//console.log("seconds: " + seconds);
 		//console.log("secondsDegrees: " + secondsDegrees);
 		secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-		secondHand.innerHTML = `<div style="font-size:2em;color:#254354;position:fixed;margin-right: 10px;transform:rotate(-${secondsDegrees}deg)">${seconds}s</div>`;
-
+		secondHand.innerHTML = `<div class="numeros" style="transform:rotate(-${secondsDegrees}deg)">${seconds}s</div>`;
 
 		// minutes
 		const mins = now.getMinutes();
@@ -20,17 +21,37 @@ window.onload = function(){
 		//console.log("mins: " + mins);
 		//console.log("minsDegrees: " + minsDegrees);
 		minsHand.style.transform = `rotate(${minsDegrees}deg)`;
-		minsHand.innerHTML = `<div style="font-size:2em;color:#254354;position:fixed;margin-right: 10px;transform:rotate(-${minsDegrees}deg)">${mins}m</div>`;
+		minsHand.innerHTML = `<div class="numeros" style="transform:rotate(-${minsDegrees}deg)">${mins}m</div>`;
 		// hour
 		const hour = now.getHours();
 		const hourDegrees = ((hour / 12) * 360) + 90;
 		//console.log("hour: " + hour);
 		//console.log("hourDegrees: " + hourDegrees);
 		hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-		hourHand.innerHTML = `<div style="font-size:2em;color:#254354;position:fixed;margin-right: 10px;transform:rotate(-${hourDegrees}deg)">${hour}h</div>`;
+		hourHand.innerHTML = `<div class="numeros" style="transform:rotate(-${hourDegrees}deg)">${hour}h</div>`;
 
 	}
 
-
 	setInterval(setDate, 1000);
+
+	buttonInvertColors.addEventListener('click', invertColors);
+
+	function invertColors(){
+		var corPadraoRelogio = "#254354";
+		var corPadraoBackground = "#E2C044";
+
+		var body = document.querySelector('body');
+		var clock = document.querySelector('.clock');
+		var title = document.querySelector('h1');
+		var numeros = document.querySelector('.numeros');
+		
+		body.style.backgroundColor = corPadraoRelogio;
+		clock.style.borderColor = corPadraoBackground;
+		title.style.color = corPadraoBackground;
+		//numeros.style.color = corPadraoBackground;
+
+		numeros.style.setProperty(`--relogio`, corPadraoBackground);
+
+	}
+
 }

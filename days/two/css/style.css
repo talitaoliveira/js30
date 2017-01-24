@@ -22,6 +22,9 @@ body{
 	justify-content: space-around;
 	background-color: var(--background);
 }
+h1{
+	color: #254354;
+}
 .clock{
 	width: 20rem;
 	height: 20rem;
@@ -53,3 +56,10 @@ body{
 .second-hand{background: var(--segundo);width: 30%;left: 20%;}
 .min-hand{background: var(--minuto);width:40%;left: 10%;}
 .hour-hand{background: var(--hora);}
+
+.numeros{
+	font-size:2em;
+	color: var(--relogio);
+	position:fixed;
+	margin-right: 10px;
+}
