@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="theme-color" content="#FFC600">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<style type="text/css">
+		/*@import url('https://fonts.googleapis.com/css?family=Amatic+SC');*/
+		html{
+			box-sizing: border-box;
+			background: #FFC600;
+			font-size: 20px;
+			font-weight: 200;
+		}
+		body{
+			margin: 0;
+		}
+		*, *:before, *:after{
+			box-sizing: inherit;
+		}
+		.panels{
+			min-height: 100vh;
+			overflow: hidden;
+			display: flex;
+		}
+		.panel{
+			background-color: #6B0F9C;
+			box-shadow: inset 0 0 0 5px rgba(255,255,255, 0.1);
+			color: #FFF;
+			text-align: center;
+			align-items: center;
+			transition:
+				font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+				flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+				background 0.2s;
+			font-size: 20px;
+			background-size: cover;
+			background-position: center;
+			flex-grow: 1;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
+		/*.panel1{background-image: url(https://images.unsplash.com/photo-1433256112148-d23c90b97248?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1500&h=1500&fit=crop&s=91da18e59af7b025cb5de46ef49a5ae3);}
+		.panel2{background-image: url(https://images.unsplash.com/photo-1463252206276-61870a35384e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1500&h=1500&fit=crop&s=cbc865060b30551a2c9f93a226dad439);}
+		.panel3{background-image: url(https://images.unsplash.com/photo-1470321046001-e6e59e877d09?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1500&h=1500&fit=crop&s=03e04fed7f673e1193102e8a1b99054c);}
+		.panel4{background-image: url(https://images.unsplash.com/photo-1482249839525-2cd6b87ebc22?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1500&h=1500&fit=crop&s=673b50f6e7234d6cc6617b6621f1cf80);}
+		.panel5{background-image: url(https://images.unsplash.com/photo-1457790601150-1f37a62db384?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1500&h=1500&fit=crop&s=2dbf6c8728a15d92f6dab370982d6b04);}*/
+
+		.panel1{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/15875647_1146789322086715_1879821900293603328_n.jpg?ig_cache_key=MTQyNjM4MDgyMjE4MDgwMzUyMw%3D%3D.2);}
+		.panel2{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/15876117_1160512584056998_46047439597076480_n.jpg?ig_cache_key=MTQyMzk0NDg5NTM4MjY4Njg2NQ%3D%3D.2);}
+		.panel3{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/sh0.08/e35/p640x640/14733320_1802494046692162_681122800294952960_n.jpg?ig_cache_key=MTM3MjgxMTMwNDA5MTc3NjAzMg%3D%3D.2);}
+		.panel4{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/14659423_201139813658450_1183609217735458816_n.jpg?ig_cache_key=MTM2MTkxNjMwNDgxMDIzMjgwOA%3D%3D.2);}
+		.panel5{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/13671724_992380197546806_950889632_n.jpg?ig_cache_key=MTMxNzY0MDA1NzIxMzM5MjA4OA%3D%3D.2);background-position: 900px 0;}
+		
+		/* FLEX ITEMS */
+		.panel > *{
+			margin: 0;
+			width: 100%;
+			transition: transform 0.5s;
+			flex: 1 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.panel > *:first-child{transform: translateY(-100%);}
+		.panel.open-active > *:first-child{transform: translateY(0%);}
+		.panel > *:last-child{transform: translateY(100%);}
+		.panel.open-active > *:last-child{transform: translateY(0%);}
+
+		.panel p{
+			text-transform: uppercase;
+			font-family: 'Amatic SC', cursive;
+			text-shadow: 0 0 4px rgba(0,0,0,0.72), 0 0 0 14px rgba(0,0,0,0.45);
+			font-size: 2em;
+		}
+
+		.panel.open{
+			flex-grow: 5;
+			font-size: 40px;
+		}
+
+		.cta{
+			color: #FFF;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="panels">
+		<div class="panel panel1">
+			<p>Hey</p>
+			<p>Let's</p>
+			<p>Dance</p>
+		</div>
+		<div class="panel panel2">
+			<p>Give</p>
+			<p>Take</p>
+			<p>Recive</p>
+		</div>
+		<div class="panel panel3">
+			<p>Experience</p>
+			<p>It</p>
+			<p>Today</p>
+		</div>
+		<div class="panel panel4">
+			<p>Give</p>
+			<p>All</p>
+			<p>You can</p>
+		</div>
+		<div class="panel panel5">
+			<p>Life</p>
+			<p>In</p>
+			<p>Motion</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		const panels = document.querySelectorAll(".panel");
+
+		function toggleOpen () {
+			this.classList.toggle('open');
+		}
+
+		function toggleActive (e) {
+			console.log(e.propertyName);
+			if(e.propertyName.includes('flex')){
+				this.classList.toggle('open-active');
+			}
+		}
+
+		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+		panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+	</script>
+</body>
+</html>

@@ -10,7 +10,7 @@ https://javascript30.com
 - [x] [day #2 - CSS + JS Clock](days/two) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/two/)
 - [x] [day #3 - Playing with CSS Variables and JS](days/three)
 - [x] [day #4 - Array Cardio Day](days/four)
-- [ ] day #5
+- [x] [day #5 - Flex Panels Image Gallery](days/five) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/five/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/five/five-mine))
 - [ ] day #6
 - [ ] day #7
 - [ ] day #8

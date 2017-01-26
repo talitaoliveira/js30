@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=320px, user-scalable=no">
+	<meta name="theme-color" content="#B3E5E2">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+:root {
+  --square-size: 30%;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #B3E5E2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+h1{
+  text-transform: uppercase;
+			font-family: 'Amatic SC', cursive;
+font-size: 3rem;
+  color: #F4F4FF;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3); 
+}
+.container {
+  background-color: #FFE5E5;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+   margin-top: 10vh;
+}
+
+.square {
+  width: var(--square-size, 20%);
+  height: var(--square-size, 20%);
+  background-color: pink;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+  font-size: 2.2em;
+  color: #FFF;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 5px rgba(255,255,255, 0.4);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3); 
+}
+
+.square.size {
+  position: absolute;
+  background-color: rgba(169,129,147, 0.9);
+  /* animation: mymove .5s; */
+   animation: mymove .5s cubic-bezier(.25,.57,.71,.23) ;
+  animation-fill-mode: forwards;
+  font-size: 5em;
+  background-size: contain;
+  background-position: center;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: -10px;
+}
+
+@keyframes mymove {
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.square1{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/15875647_1146789322086715_1879821900293603328_n.jpg?ig_cache_key=MTQyNjM4MDgyMjE4MDgwMzUyMw%3D%3D.2);}
+		.square2{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/15876117_1160512584056998_46047439597076480_n.jpg?ig_cache_key=MTQyMzk0NDg5NTM4MjY4Njg2NQ%3D%3D.2);}
+		.square3{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/sh0.08/e35/p640x640/14733320_1802494046692162_681122800294952960_n.jpg?ig_cache_key=MTM3MjgxMTMwNDA5MTc3NjAzMg%3D%3D.2);}
+		.square4{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/14659423_201139813658450_1183609217735458816_n.jpg?ig_cache_key=MTM2MTkxNjMwNDgxMDIzMjgwOA%3D%3D.2);}
+		.square5{background-image: url(https://instagram.frec3-1.fna.fbcdn.net/t51.2885-15/e35/13671724_992380197546806_950889632_n.jpg?ig_cache_key=MTMxNzY0MDA1NzIxMzM5MjA4OA%3D%3D.2);}
+	</style>
+</head>
+<body>
+	<div class="container">
+  <div class="square square1">
+    <p>Hello</p>
+  </div>
+  <div class="square square2">
+    <p>You</p>
+  </div>
+  <div class="square square3">
+    <p>Are</p>
+  </div>
+  <div class="square square4">
+    <p>an</p>
+  </div>
+  <div class="square square5">
+    <p>awesome</p>
+  </div>
+  <div class="square square6">
+    <p>people</p>
+  </div>
+</div>
+<h1>Some beautiful text</h1>
+
+	<script type="text/javascript">
+		const squares = document.querySelectorAll('.square');
+
+function sizeSquare(){
+  this.classList.toggle('size');
+}
+
+squares.forEach(square => square.addEventListener('click', sizeSquare));
+
+	</script>
+</body>
+</html>
