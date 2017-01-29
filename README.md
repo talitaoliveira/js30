@@ -11,7 +11,7 @@ https://javascript30.com
 - [x] [day #3 - Playing with CSS Variables and JS](days/three)
 - [x] [day #4 - Array Cardio Day](days/four)
 - [x] [day #5 - Flex Panels Image Gallery](days/five) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/five/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/five/five-mine))
-- [x] [day #6 - Ajax Type Ahead](days/six) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/six/) 
+- [x] [day #6 - Ajax Type Ahead](days/six) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/six/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/six/six-mine))
 - [ ] day #7
 - [ ] day #8
 - [ ] day #9
