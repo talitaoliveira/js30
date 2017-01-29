@@ -1,0 +1,117 @@
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Raleway:100i,200,400');
+
+/* pequeno reset */
+*{
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* variaveis de cores  - retrado e colocado numa folha de estilo de*/
+/*:root{
+	// cores US
+	--cor-principal: #230969;
+	--cor-secundaria1: #C90028;
+	--cor-secundaria2: #FFF;
+	--highlight: #ff2;
+
+	// cores BR
+	--cor-principal: #009B3A;
+	--cor-secundaria1: #FEDF00;
+	--cor-secundaria2: #002776;
+	--highlight: #ff2;
+}*/
+
+body{
+	width: 100vw;
+	background-color: var(--cor-principal);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+h1{
+	font-family: 'Bad Script', cursive;
+	font-size: 2.5rem;
+	color: var(--cor-secundaria2);
+	padding: 25px 0;
+	text-align: center;
+}
+
+.container{
+	width: 60vw;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+
+.search{
+	height: 40px;
+	padding: 30px 15px;
+	border: none;
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.search:focus{
+	border-bottom: 5px solid var(--cor-secundaria1);
+	color: var(--cor-secundaria1);
+	outline: none;
+}
+
+ul{
+	margin-top: 20px;
+}
+
+li{
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	padding: 20px 10px;
+}
+
+li:nth-child(even){
+	color: var(--cor-secundaria2);
+	background-color: var(--cor-secundaria1);
+	transform: skewX(-8deg);
+}
+
+li:nth-child(odd){
+	color: var(--cor-principal);
+	background-color: var(--cor-secundaria2);
+	transform: skewX(8deg);
+}
+.hl{
+	color: var(--cor-principal);
+	background-color: var(--highlight);
+}
+
+
+/* Portrait and Landscape */
+@media screen 
+and (max-device-width: 768px)  {
+	.container{
+		width: 90vw;
+	}
+	h1{
+		font-size: 2rem;
+	}
+	li{
+		font-size: 1.8rem;
+	}
+}

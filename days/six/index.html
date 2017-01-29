@@ -1,70 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-		.hl{
-			background-color: yellow;
-		}
-	</style>
+	<title>Cities and States of USA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#230969">
+	<link rel="stylesheet" href="css/cor-us.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<form class="search-form">
-		<input type="text" class="search" placeholder="City or State">
-		<ul class="suggestions">
-			<li>Filter for a city</li>
-			<li>or a state</li>
-		</ul>
-	</form>
-	<script>
-
-		const endpoint = "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw";
-
-		const cities = [];
-
-		/*fetch(endpoint)
-			.then(blob => blob.json())
-			.then(data => cities.push(data));*/
-
-		fetch(endpoint)
-			.then(blob => blob.json())
-			.then(data => cities.push(...data))
-
-		function findMatches (wordToMatch, cities) {
-			return cities.filter(place => {
-				// here you need to figure out id the citiy or state matches what was searched
-				const regex = new RegExp(wordToMatch, 'gi')
-				return place.city.match(regex) || place.state.match(regex)
-			})
-		}
-
-		function numberWithCommas(x) {
-			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		}
-
-		function displayMatches(){
-			const matchArray = findMatches(this.value, cities);
-			const html = matchArray.map(place => {
-				const regex = new RegExp(this.value, 'gi');
-				const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`)
-				const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`)
-				return `
-				<li>
-					<span class="name">${cityName}, ${stateName}</span>
-					<span class="population">${numberWithCommas(place.population)}</span>
-				</li>
-				`;
-			}).join('');
-
-			suggestions.innerHTML = html;
-		}
-
-		const searchInput = document.querySelector('.search');
-		const suggestions = document.querySelector('.suggestions');
-
-		searchInput.addEventListener('change', displayMatches);
-		searchInput.addEventListener('keyup', displayMatches);
-
-		</script>
-	</body>
-	</html>
+	<div class="container">
+		<h1>Cities and States of USA</h1>
+		<form class="search-form">
+			<input type="text" class="search" placeholder="City or State">
+			<ul class="suggestions">
+				<li>Filter for a city or a state</li>
+			</ul>
+		</form>
+	</div>
+	
+</body>
+</html>
