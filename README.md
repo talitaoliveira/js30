@@ -12,7 +12,7 @@ https://javascript30.com
 - [x] [day #4 - Array Cardio Day](days/04-four)
 - [x] [day #5 - Flex Panels Image Gallery](days/05-five) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/five/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/five/five-mine))
 - [x] [day #6 - Ajax Type Ahead](days/06-six) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/six/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/six/six-mine))
-- [x] [day #4 - Array Cardio Day#2](days/07-seven)
+- [x] [day #7 - Array Cardio Day#2](days/07-seven)
 - [ ] day #8
 - [ ] day #9
 - [ ] day #10
