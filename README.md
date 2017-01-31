@@ -6,14 +6,14 @@ https://javascript30.com
 ![Image of JS](img/icon-js.png)
 ![Image of CSS](img/icon-css.png)
 
-- [x] [day #1 - JavaScript Drum Kit](days/01-one) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/one/)
-- [x] [day #2 - CSS + JS Clock](days/02-two) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/two/)
+- [x] [day #1 - JavaScript Drum Kit](days/01-one) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/01-one/)
+- [x] [day #2 - CSS + JS Clock](days/02-two) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/02-two/)
 - [x] [day #3 - Playing with CSS Variables and JS](days/03-three)
 - [x] [day #4 - Array Cardio Day](days/04-four)
-- [x] [day #5 - Flex Panels Image Gallery](days/05-five) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/five/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/five/five-mine))
-- [x] [day #6 - Ajax Type Ahead](days/06-six) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/six/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/six/six-mine))
+- [x] [day #5 - Flex Panels Image Gallery](days/05-five) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/05-five/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/05-five/five-mine))
+- [x] [day #6 - Ajax Type Ahead](days/06-six) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/06-six/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/06-six/six-mine))
 - [x] [day #7 - Array Cardio Day#2](days/07-seven)
-- [ ] day #8
+- [x] [day #8 - Fun with HTML5 Canvas](days/08-eight) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/08-eight/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/08-eight/eight-mine))
 - [ ] day #9
 - [ ] day #10
 - [ ] day #11
