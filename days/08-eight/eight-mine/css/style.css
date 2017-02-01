@@ -1,0 +1,103 @@
+@charset("utf-8");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Gloria+Hallelujah');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  width:  100%;
+  height: 100%;
+  overflow: hidden; /*  Disable scrollbars */
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #2B2D42;
+
+}
+
+h1{
+  font-size: 2.2em;
+  color: #FFF;
+  margin-bottom: 7vh;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#draw {
+  background-color: #fff;
+}
+
+.gerenal-board {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 30px 10px 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  background-color: #8D99AE;
+  color: #FFF;
+  text-shadow: .5px .5px #000;
+}
+
+.controls:before {
+  content: "~Happiness controls~";
+  position: absolute;
+  top: 0;
+  font-size: 1.2em;
+}
+
+.control {
+  padding: 5px;
+}
+
+#btn-colored {
+  background: red; /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+}
+button{
+	text-transform: uppercase;
+}
+#btn-color {
+  padding: -10px;
+}
+
+#btn-clear {
+  padding: 5px 10px;
+}
+
+.constant-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .controls{
+    width: 80vw;
+  }
+}
