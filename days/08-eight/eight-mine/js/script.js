@@ -34,6 +34,8 @@ console.log(ctx.lineWidth);
 
 function draw(e) {
 
+	var touches = e.changedTouches;
+
 	if (!isDrwaing) return; // stop the function from running when they are not moused down
 	console.log(e);
 
@@ -80,8 +82,13 @@ canvas.addEventListener("mousedown", (e) => {
 
 // verificação de desenho
 canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("touchmove", draw);
+
 canvas.addEventListener("mouseup", () => isDrwaing = false);
+canvas.addEventListener("touchstart", () => isDrwaing = false);
+
 canvas.addEventListener("mouseout", () => isDrwaing = false);
+canvas.addEventListener("touchleave", () => isDrwaing = false);
 
 color.addEventListener("change", (e) => {
 	ctx.strokeStyle = e.target.value;
