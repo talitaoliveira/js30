@@ -15,7 +15,7 @@ https://javascript30.com
 - [x] [day #7 - Array Cardio Day#2](days/07-seven)
 - [x] [day #8 - Fun with HTML5 Canvas](days/08-eight) :arrow_right: See in action :arrow_right: [view](http://talitaoliveira.com.br/js30/days/08-eight/) (and one more: :arrow_right: [view another version](http://talitaoliveira.com.br/js30/days/08-eight/eight-mine))
 - [x] [day #9 - 14 Must Know Dev Tools Tricks](days/09-nine) 
-- [ ] day #10
+- [x] [day #10 - Hold Shift to Check Multiple Checkboxes](days/10-ten)
 - [ ] day #11
 - [ ] day #12
 - [ ] day #13
