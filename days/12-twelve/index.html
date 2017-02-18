@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Key Detection</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://www.cornify.com/js/cornify.js" ></script>
+	<meta name="theme-color" content="#">
+	<meta name="viewport" content="width=320px, user-scalable=no">
+
+</head>
+<body>
+	<script>
+		const pressed = [];
+		const secretCode = 'talita';
+
+
+		window.addEventListener('keyup',(e) => {
+			pressed.push(e.key);
+			pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+
+			if(pressed.join('').includes(secretCode)){
+				console.log("DING DING");
+				cornify_add();
+			}
+
+			console.log(pressed);
+		});
+	</script>
+</body>
+</html>
