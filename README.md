@@ -19,7 +19,7 @@ https://javascript30.com
 - [x] [day #11 - Custom HTML5 Video Player](days/11-eleven)
 - [x] :star: [day #12 - Key Sequence Detection (KONAMI CODE)](days/12-twelve)
 - [ ] day #13
-- [ ] day #14
+- [x] :star: [day #14 - Reference VS Copy](days/14-fourteen)
 - [ ] day #15
 - [ ] day #16
 - [ ] day #17
