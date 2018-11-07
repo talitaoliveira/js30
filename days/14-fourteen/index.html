@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Reference VS Copy</title>
+</head>
+
+<body>
+
+    <script>
+        // Strings
+        let age = 100;
+        let age2 = age;
+
+        console.log(age, age2);
+
+        age = 200;
+
+        console.log(age, age2);
+
+        let name = 'Talita';
+        let name2 = name;
+
+        console.log(name, name2);
+
+        name = 'Oliveira';
+
+        console.log(name, name2);
+
+        // Array
+
+        const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+        const team = players;
+
+        console.log(players, team);
+
+        team[3] = 'Lux';
+
+        const team2 = players.slice();
+
+        console.log(team2);
+
+        team[3] = 'Robert';
+
+
+        team4 = [...players]
+
+        team4[2] = 'teste';
+
+        console.log(team4, players)
+
+        team5 = Array.from(players)
+
+        team5[2] = 'teste5';
+
+        console.log(team5, players)
+
+        // objects
+
+        const person = {
+            name: 'Tallita',
+            age: 26
+        }
+
+        const captain = person
+        captain.number = 99;
+
+        console.log(person, captain);
+
+        const cap2 = Object.assign({}, person);
+
+        cap2.hello = 'world'
+
+        console.log(person, cap2);
+
+        const cap3 = {...person};
+
+        cap3.sea = 'deep';
+
+        console.log(person, cap3);
+
+
+        const talita = {
+            name: 'Talita',
+            age: 26,
+            social: {
+                twitter: '@liitacherry'
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
