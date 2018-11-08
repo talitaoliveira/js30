@@ -22,7 +22,7 @@ https://javascript30.com
 - [x] :star: [day #14 - Reference VS Copy](days/14-fourteen)
 - [ ] day #15
 - [ ] day #16
-- [ ] day #17
+- [x] :star: [day #17 - Sorting Band Names without articles](days/17-seventeen)
 - [ ] day #18
 - [ ] day #19
 - [ ] day #20
