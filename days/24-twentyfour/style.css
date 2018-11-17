@@ -22,13 +22,15 @@ header {
 
 h1{
     color: #FFF;
-    font-size: 3rem;
+    font-size: 7vw;
     text-align: center;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
 }
 
 nav {
     background-color: #000;
 }
+
 
 ul {
     display: flex;
@@ -38,6 +40,19 @@ ul {
 ul > li {
     padding: 20px;
 }
+/* 
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all .5s;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  li.logo a {
+    color: black;
+  } */
 
 ul > li > a{
     color: #FFF;
@@ -53,7 +68,8 @@ ul > li > a:hover{
 }
 
 .site-wrap{
-    margin: 50px;
+    max-width: 700px;
+    margin: 50px auto;
     background-color: #fff;
     padding: 50px 30px;
     box-shadow: 1px 1px 10px #aaa;
