@@ -34,7 +34,7 @@ nav {
     position: relative;
     transition: all .5s;
     top: 0;
-
+    z-index: 1;
 }
 
 nav li {
@@ -93,6 +93,12 @@ ul > li > a:hover{
     background-color: #fff;
     padding: 50px 30px;
     box-shadow: 1px 1px 10px #aaa;
+    transform: scale(0.98);
+    transition: transform .5s;
+}
+
+.fixed-nav .site-wrap{
+    transform: scale(1); 
 }
 
 p {
