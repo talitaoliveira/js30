@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    list-style: none;
 }
 
 html, body {
@@ -36,6 +37,19 @@ nav {
 
 }
 
+nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px rgba(0,0,0,0.1);
+}
+
 
 ul {
     
@@ -43,10 +57,6 @@ ul {
     justify-content: space-around;
 }
 
-ul > li {
-    padding: 20px;
-}
-/* 
 li.logo {
     max-width: 0;
     overflow: hidden;
@@ -56,9 +66,13 @@ li.logo {
     font-size: 30px;
   }
   
-  li.logo a {
-    color: black;
-  } */
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+  
+li.logo a {
+color: black;
+}
 
 ul > li > a{
     color: #FFF;
