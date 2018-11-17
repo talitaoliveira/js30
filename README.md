@@ -29,7 +29,7 @@ https://javascript30.com
 - [ ] day #21
 - [ ] day #22
 - [ ] day #23
-- [ ] day #24
+- [x] :star: [day #24 - Sticky Nav](days/24-twentyfour)
 - [ ] day #25
 - [ ] day #26
 - [ ] day #27
